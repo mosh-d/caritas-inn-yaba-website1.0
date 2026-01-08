@@ -1,4 +1,4 @@
-# Caritas Inn Lekki - robots.txt
+# Caritas Inn Yaba - robots.txt
 User-agent: *
 Allow: /
 Disallow: /admin/
@@ -6,7 +6,7 @@ Disallow: /api/
 Disallow: /*?*
 
 # Sitemap location
-Sitemap: https://caritasinnlekki.fivecloverhotels.com/sitemap.xml
+Sitemap: https://caritasinnyaba.fivecloverhotels.com/sitemap.xml
 
 Crawl-delay: 10
 

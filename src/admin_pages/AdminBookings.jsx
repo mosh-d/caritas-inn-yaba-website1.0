@@ -51,7 +51,7 @@ export default function AdminBookingsPage() {
       const response = await axios.post(
         `${baseUrl}/api/bookings`,
         {
-          room_type_id: [15, 16, 17, 18, 19],
+          room_type_id: [20, 21, 22],
         },
         {
           headers: {

@@ -11,73 +11,65 @@ import beaches from "../../assets/hotel-surroundings/beaches.webp";
 
 const TOP_ATTRACTIONS = [
   {
-    title: "Lekki Conservation Centre",
+    title: "University of Lagos (UNILAG)",
     distance: "2 km",
   },
   {
-    title: "GET Arena (The Place)",
+    title: "National Stadium",
     distance: "3 km",
   },
   {
-    title: "Oniru Beach",
-    distance: "5 km",
+    title: "Yaba Tech",
+    distance: "1 km",
   },
   {
-    title: "Nike Art Gallery",
-    distance: "4 km",
-  },
-  {
-    title: "Lekki Leisure Lake",
-    distance: "6 km",
+    title: "Nigerian Institute of Medical Research",
+    distance: "2 km",
   },
 ];
 
 const SUPERMARKETS = [
   {
-    title: "The Palms Shopping Mall",
+    title: "Sabo Market",
+    distance: "500m",
+  },
+  {
+    title: "Tejuosho Market",
+    distance: "2 km",
+  },
+  {
+    title: "ShopRite - Sabo",
     distance: "3 km",
-  },
-  {
-    title: "GET Arena Mall",
-    distance: "3 km",
-  },
-  {
-    title: "Ebeano Supermarket - Lekki",
-    distance: "4 km",
-  },
-  {
-    title: "ShopRite - Lekki",
-    distance: "5 km",
   },
 ];
 
 const TRANSPORTATION = [
   {
-    title: "Lekki-Epe Expressway",
+    title: "Hebert Macaulay Way",
+    distance: "On-site",
+  },
+  {
+    title: "Yaba Bus Stop",
     distance: "1 km",
   },
   {
-    title: "Admiralty Way",
-    distance: "3 km",
-  },
-  {
     title: "Murtala Muhammed Airport",
-    distance: "30 km",
+    distance: "20 km",
   },
 ];
 
 const BEACHES = [
   {
-    title: "Oniru Private Beach",
-    distance: "5 km",
-  },
-  {
-    title: "Elegushi Private Beach",
+    title: "Bar Beach",
     distance: "8 km",
   },
   {
-    title: "Alpha Beach",
-    distance: "10 km",
+    title: "Oniru Beach",
+    distance: "12 km",
+  },
+  {
+    title: "Elegushi Private Beach",
+    distance: "15 km",
   },
 ];
 

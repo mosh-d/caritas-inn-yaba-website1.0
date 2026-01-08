@@ -29,7 +29,7 @@ export default function RootLayout() {
   const [roomTypeId, setRoomTypeId] = useState(null);
   const [totalPayment, setTotalPayment] = useState(0);
   const [roomPrices, setRoomPrices] = useState({});
-  const [branchId] = useState(5); // Caritas Inn Lekki branch ID
+  const [branchId] = useState(6); // Caritas Inn Yaba branch ID
   const [roomTypes, setRoomTypes] = useState([]);
   const [isLoadingRooms, setIsLoadingRooms] = useState(true);
 
@@ -197,7 +197,7 @@ export default function RootLayout() {
 
   // Get current page metadata
   const getPageMetadata = () => {
-    const baseUrl = "https://caritasinnlekki.fivecloverhotels.com";
+    const baseUrl = "https://caritasinnyaba.fivecloverhotels.com";
     const defaultMetadata = {
       title: "Caritas Inn Lekki | Luxury Accommodation in Lekki Phase 1, Lagos",
       description:
@@ -209,35 +209,34 @@ export default function RootLayout() {
 
     const pageMetadata = {
       "/": {
-        title:
-          "Caritas Inn Lekki | Luxury Accommodation in Lekki Phase 1, Lagos",
+        title: "Caritas Inn Yaba | Luxury Accommodation in Sabo, Yaba, Lagos",
         description:
           "Experience luxury and comfort at Caritas Inn Lekki. Book your stay at our premium hotel in Lekki Phase 1, Lagos.",
       },
       "/about": {
-        title: "About Us | Caritas Inn Lekki",
+        title: "About Us | Caritas Inn Yaba",
         description:
-          "Discover the story behind Caritas Inn Lekki and our commitment to providing exceptional hospitality in Lekki Phase 1, Lagos.",
+          "Discover the story behind Caritas Inn Yaba and our commitment to providing exceptional hospitality in Sabo, Yaba, Lagos.",
       },
       "/rooms": {
-        title: "Our Rooms | Caritas Inn Lekki",
+        title: "Our Rooms | Caritas Inn Yaba",
         description:
-          "Explore our luxurious rooms at Caritas Inn Lekki, designed for your comfort and relaxation.",
+          "Explore our luxurious rooms at Caritas Inn Yaba, designed for your comfort and relaxation.",
       },
       "/gallery": {
-        title: "Photo Gallery | Caritas Inn Lekki",
+        title: "Photo Gallery | Caritas Inn Yaba",
         description:
-          "View our photo gallery showcasing the luxurious facilities and comfortable accommodations at Caritas Inn Lekki.",
+          "View our photo gallery showcasing the luxurious facilities and comfortable accommodations at Caritas Inn Yaba.",
       },
       "/contact": {
-        title: "Contact Us | Caritas Inn Lekki",
+        title: "Contact Us | Caritas Inn Yaba",
         description:
-          "Get in touch with Caritas Inn Lekki. Our friendly staff is ready to assist with your booking and inquiries.",
+          "Get in touch with Caritas Inn Yaba. Our friendly staff is ready to assist with your booking and inquiries.",
       },
       "/booking": {
-        title: "Book Your Stay | Caritas Inn Lekki",
+        title: "Book Your Stay | Caritas Inn Yaba",
         description:
-          "Book your luxurious stay at Caritas Inn Lekki. Best rates guaranteed for our premium accommodations in Lekki Phase 1.",
+          "Book your luxurious stay at Caritas Inn Yaba. Best rates guaranteed for our premium accommodations in Sabo, Yaba.",
       },
     };
 
@@ -261,12 +260,12 @@ export default function RootLayout() {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Hotel",
-            name: "Caritas Inn Lekki",
+            name: "Caritas Inn Yaba",
             description:
-              "Experience luxury and comfort at Caritas Inn Lekki. Book your stay at our premium hotel in Lekki Phase 1, Lagos.",
+              "Experience luxury and comfort at Caritas Inn Yaba. Book your stay at our premium hotel in Sabo, Yaba, Lagos.",
             image:
-              "https://caritasinnlekki.fivecloverhotels.com/caritas%20logo.webp",
-            url: "https://caritasinnlekki.fivecloverhotels.com",
+              "https://caritasinnyaba.fivecloverhotels.com/caritas%20logo.webp",
+            url: "https://caritasinnyaba.fivecloverhotels.com",
             address: {
               "@type": "PostalAddress",
               streetAddress:
@@ -278,8 +277,8 @@ export default function RootLayout() {
             },
             geo: {
               "@type": "GeoCoordinates",
-              latitude: 6.45687015487152,
-              longitude: 3.4718055085800708,
+              latitude: 6.509827212594004,
+              longitude: 3.378320655818211,
             },
             priceRange: "₦₦",
             starRating: {
@@ -287,8 +286,8 @@ export default function RootLayout() {
               ratingValue: "4.5",
               bestRating: "5",
             },
-            telephone: "+2349125660131",
-            email: "info@caritasinnlekkihotel.com",
+            telephone: "+2349122649648",
+            email: "info@caritasinnyabahotel.com",
             sameAs: [
               "https://www.facebook.com/RingrubyHotel?_rdc=1&_rdr#",
               "https://www.instagram.com/ringruby_hotel/",

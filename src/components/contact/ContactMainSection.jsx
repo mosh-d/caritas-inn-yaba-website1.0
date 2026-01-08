@@ -19,7 +19,7 @@ export default function ContactMainSection() {
       >
         <h1 className="text-6xl font-bold">Get In Touch</h1>
         <p className="text-2xl font-semibold">
-          Have any questions or need assistance? The team at Caritas Inn, Lekki
+          Have any questions or need assistance? The team at Caritas Inn, Yaba
           is always ready to ensure your stay is flawless. Don't hesitate to
           reach out—we're here to help with anything you need.
         </p>
@@ -47,10 +47,10 @@ export default function ContactMainSection() {
           >
             <RiPhoneLine size="3rem" />
             <a
-              href="tel:+2349125660131"
+              href="tel:+2349122649648"
               className="border-b border-[color:var(--text-color)]/30 text-xl"
             >
-              +234 912 566 0131
+              +234 912 264 9648
             </a>
           </div>
           <div
@@ -59,10 +59,10 @@ export default function ContactMainSection() {
           >
             <RiMailLine size="3rem" />
             <a
-              href="mailto:info@caritasinnlekkihotel.com"
+              href="mailto:info@caritasinnyabahotel.com"
               className="border-b border-[color:var(--text-color)]/30 text-xl"
             >
-              info@caritasinnlekkihotel.com
+              info@caritasinnyabahotel.com
             </a>
           </div>
           <div

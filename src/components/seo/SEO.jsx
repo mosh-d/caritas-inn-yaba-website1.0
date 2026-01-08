@@ -1,17 +1,17 @@
 import { Helmet } from "react-helmet";
 
 const SEO = ({
-  title = "Caritas Inn Lekki | Luxury Accommodation in Lekki Phase 1, Lagos",
-  description = "Experience luxury and comfort at Caritas Inn Lekki. Book your stay at our premium hotel in Lekki Phase 1, Lagos.",
-  keywords = "hotel, lagos, accommodation, caritas inn, lekki, lekki phase 1, african lane, luxury hotel, nigeria, business hotel, vacation",
+  title = "Caritas Inn Yaba | Luxury Accommodation in Sabo, Yaba, Lagos",
+  description = "Experience luxury and comfort at Caritas Inn Yaba. Book your stay at our premium hotel in Sabo, Yaba, Lagos.",
+  keywords = "hotel, lagos, accommodation, caritas inn, yaba, sabo, hebert macaulay, luxury hotel, nigeria, business hotel, vacation",
   image = "/ring-ruby-logo.webp",
   url = typeof window !== "undefined"
     ? window.location.href
-    : "https://caritasinnlekki.fivecloverhotels.com",
+    : "https://caritasinnyaba.fivecloverhotels.com",
   type = "website",
 }) => {
-  const siteName = "Caritas Inn Lekki";
-  const siteUrl = "https://caritasinnlekki.fivecloverhotels.com";
+  const siteName = "Caritas Inn Yaba";
+  const siteUrl = "https://caritasinnyaba.fivecloverhotels.com";
   const twitterHandle = "@fivecloverhotel";
 
   return (

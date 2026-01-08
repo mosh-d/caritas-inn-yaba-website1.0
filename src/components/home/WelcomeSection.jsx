@@ -12,8 +12,8 @@ export default function WelcomeSection() {
         className="w-full h-[400px] max-sm:h-[200px] overflow-hidden"
       >
         <iframe
-          title="Google Map - 3, Ibiyinka Salvador Street, African Lane, Lekki Phase 1, Lagos"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.6!2d3.4718055085800708!3d6.45687015487152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf6c3f3f3f3f3%3A0x3f3f3f3f3f3f3f3f!2sAfrican%20Lane%2C%20Lekki%2C%20Lagos!5e0!3m2!1sen!2sng!4v1709825424356!5m2!1sen!2sng&style=feature:administrative%7Celement:geometry%7Ccolor:0x1b1b1b&style=feature:administrative%7Celement:labels%7Cvisibility:off&style=feature:administrative.land_parcel%7Celement:geometry%7Ccolor:0x1b1b1b&style=feature:administrative.land_parcel%7Celement:labels%7Cvisibility:off&style=feature:landscape%7Celement:geometry%7Ccolor:0x1b1b1b&style=feature:poi%7Celement:geometry%7Ccolor:0x1b1b1b&style=feature:poi%7Celement:labels%7Cvisibility:off&style=feature:road%7Celement:geometry%7Ccolor:0x404040&style=feature:road%7Celement:labels%7Cvisibility:off&style=feature:transit%7Celement:geometry%7Ccolor:0x404040&style=feature:transit%7Celement:labels%7Cvisibility:off&style=feature:water%7Celement:geometry%7Ccolor:0x0a0a0a"
+          title="Google Map - 336, Hebert Macaulay way, Sabo, Yaba, Lagos"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.8!2d3.378320655818211!3d6.509827212594004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c3f3f3f3f3f%3A0x3f3f3f3f3f3f3f3f!2sHebert%20Macaulay%20Way%2C%20Yaba%2C%20Lagos!5e0!3m2!1sen!2sng!4v1709825424356!5m2!1sen!2sng&style=feature:administrative%7Celement:geometry%7Ccolor:0x1b1b1b&style=feature:administrative%7Celement:labels%7Cvisibility:off&style=feature:administrative.land_parcel%7Celement:geometry%7Ccolor:0x1b1b1b&style=feature:administrative.land_parcel%7Celement:labels%7Cvisibility:off&style=feature:landscape%7Celement:geometry%7Ccolor:0x1b1b1b&style=feature:poi%7Celement:geometry%7Ccolor:0x1b1b1b&style=feature:poi%7Celement:labels%7Cvisibility:off&style=feature:road%7Celement:geometry%7Ccolor:0x404040&style=feature:road%7Celement:labels%7Cvisibility:off&style=feature:transit%7Celement:geometry%7Ccolor:0x404040&style=feature:transit%7Celement:labels%7Cvisibility:off&style=feature:water%7Celement:geometry%7Ccolor:0x0a0a0a"
           width="100%"
           height="100%"
           style={{
@@ -28,11 +28,11 @@ export default function WelcomeSection() {
 
       <div className="flex max-sm:flex-col gap-[2rem]">
         <p className="font-secondary text-3xl mx-[1rem] font-bold">
-          3, Ibiyinka Salvador Street, African Lane, Lekki Phase 1, Lagos
+          336, Hebert Macaulay way, Sabo, Yaba, Lagos
         </p>
         <a
           data-component="Map link"
-          href="https://maps.google.com/?q=3+Ibiyinka+Salvador+Street,+African+Lane,+Lekki+Phase+1,+Lagos"
+          href="https://maps.google.com/?q=336+Hebert+Macaulay+way,+Sabo,+Yaba,+Lagos"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-4 w-fit max-sm:w-full"
