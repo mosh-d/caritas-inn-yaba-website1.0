@@ -50,8 +50,15 @@ export default function AdminOverviewPage() {
     }
   };
 
+  // Auto-refresh every 30 seconds for admin monitoring
   useEffect(() => {
-    loadRoomData();
+    loadRoomData(); // Initial fetch
+
+    const interval = setInterval(() => {
+      loadRoomData(); // Auto-refresh
+    }, 30000); // 30 seconds
+
+    return () => clearInterval(interval); // Cleanup
   }, [roomType]);
 
   const validateInput = (value) => {
@@ -126,20 +133,6 @@ export default function AdminOverviewPage() {
           <h1 className="text-6xl font-secondary font-bold text-[color:var(--black)]">
             Overview
           </h1>
-          <div className="w-56 flex justify-end">
-            <button
-              onClick={loadRoomData}
-              disabled={isLoading}
-              className="flex items-center justify-center gap-2 text-xl w-56 py-4 bg-[color:var(--text-color)] text-white rounded cursor-pointer hover:bg-[color:var(--text-color)]/70 disabled:bg-[color:var(--text-color)]"
-              title="Refresh room data"
-            >
-              <IoRefresh
-                size="1.5rem"
-                className={isLoading ? "animate-spin" : ""}
-              />
-              {isLoading ? "Refreshing..." : "Refresh Data"}
-            </button>
-          </div>
         </div>
         <menu className="flex gap-[4rem] text-xl text-[color:var(--emphasis)]">
           {roomType === "standard" ? (
