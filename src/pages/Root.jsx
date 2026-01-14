@@ -7,6 +7,7 @@ import axios from "axios";
 import { generateHotelSchema } from "../utils/seoUtils";
 import SEO from "../components/seo/SEO";
 import SafeHelmet from "../components/seo/SafeHelmet";
+import SchemaMarkup from "../components/shared/SchemaMarkup";
 
 const API_BASE_URL = "https://five-clover-shared-backend.onrender.com";
 
@@ -264,46 +265,8 @@ export default function RootLayout() {
         <meta property="og:url" content={metadata.url} />
         <meta property="og:type" content={metadata.type} />
         <meta property="og:image" content={metadata.image} />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Hotel",
-            name: "Caritas Inn Yaba",
-            description:
-              "Experience luxury and comfort at Caritas Inn Yaba. Book your stay at our premium hotel in Sabo, Yaba, Lagos.",
-            image:
-              "https://caritasinnyaba.fivecloverhotels.com/caritas%20logo.webp",
-            url: "https://caritasinnyaba.fivecloverhotels.com",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress:
-                "3, Ibiyinka Salvador Street, African Lane, Lekki Phase 1",
-              addressLocality: "Lekki",
-              addressRegion: "Lagos",
-              postalCode: "100001",
-              addressCountry: "NG",
-            },
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 6.509827212594004,
-              longitude: 3.378320655818211,
-            },
-            priceRange: "₦₦",
-            starRating: {
-              "@type": "Rating",
-              ratingValue: "4.5",
-              bestRating: "5",
-            },
-            telephone: "+2349122649648",
-            email: "info@caritasinnyabahotel.com",
-            sameAs: [
-              "https://www.facebook.com/RingrubyHotel?_rdc=1&_rdr#",
-              "https://www.instagram.com/ringruby_hotel/",
-              "https://twitter.com/fivecloverhotel",
-            ],
-          })}
-        </script>
       </SafeHelmet>
+      <SchemaMarkup branchId={branchId} />
       <header>{!isHome && <MainNavBar />}</header>
       <main>
         <Outlet context={contextValue} />
