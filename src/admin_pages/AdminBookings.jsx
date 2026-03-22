@@ -280,6 +280,12 @@ export default function AdminBookingsPage() {
                   Guest Name
                 </th>
                 <th className="px-8 py-4 text-left whitespace-nowrap">
+                  Guest Email
+                </th>
+                <th className="px-8 py-4 text-left whitespace-nowrap">
+                  Guest Phone
+                </th>
+                <th className="px-8 py-4 text-left whitespace-nowrap">
                   Booking ID
                 </th>
                 <th className="px-8 py-4 text-left whitespace-nowrap">
@@ -305,14 +311,14 @@ export default function AdminBookingsPage() {
             <tbody>
               {loading ? (
                 <tr>
-                  <td colSpan="8" className="px-8 py-8 text-center">
+                  <td colSpan="10" className="px-8 py-8 text-center">
                     Loading bookings...
                   </td>
                 </tr>
               ) : error ? (
                 <tr>
                   <td
-                    colSpan="8"
+                    colSpan="10"
                     className="px-8 py-8 text-center text-red-600"
                   >
                     {error}
@@ -320,7 +326,7 @@ export default function AdminBookingsPage() {
                 </tr>
               ) : bookings.length === 0 ? (
                 <tr>
-                  <td colSpan="8" className="px-8 py-8 text-center">
+                  <td colSpan="10" className="px-8 py-8 text-center">
                     No bookings found.
                   </td>
                 </tr>
@@ -332,6 +338,12 @@ export default function AdminBookingsPage() {
                   >
                     <td className="px-8 py-4 text-left">
                       {booking.guest_name}
+                    </td>
+                    <td className="px-8 py-4 text-left">
+                      {booking.guest_email || "N/A"}
+                    </td>
+                    <td className="px-8 py-4 text-left">
+                      {booking.phone_number || "N/A"}
                     </td>
                     <td className="px-8 py-4 text-left">
                       {booking.booking_id}
