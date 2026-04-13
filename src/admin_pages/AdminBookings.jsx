@@ -22,8 +22,7 @@ const testLocalConnection = async () => {
     const response = await axios.get(LOCAL_URL, {
       timeout: 1000,
       // Don't throw on non-2xx status codes
-      validateStatus: () => true,
-    });
+      validateStatus: () => true });
     // If we get any response, the server is up
     if (response.status) {
       console.log(" AdminBookings: Connected to local development server");
@@ -81,14 +80,10 @@ export default function AdminBookingsPage() {
       const response = await axios.post(
         `${baseUrl}/api/bookings`,
         {
-          room_type_id: [20, 21, 22],
-        },
+          room_type_id: [20, 21, 22] },
         {
           headers: {
-            "Content-Type": "application/json",
-          },
-          withCredentials: true,
-        },
+            "Content-Type": "application/json" } },
       );
 
       setBookings(response.data);
@@ -112,14 +107,10 @@ export default function AdminBookingsPage() {
       const response = await axios.post(
         `${baseUrl}/api/reservations/confirm`,
         {
-          reservation_id: reservationId,
-        },
+          reservation_id: reservationId },
         {
           headers: {
-            "Content-Type": "application/json",
-          },
-          withCredentials: true,
-        },
+            "Content-Type": "application/json" } },
       );
 
       // Show success message
@@ -141,8 +132,7 @@ export default function AdminBookingsPage() {
         reservationId,
       );
       const payload = {
-        reservation_id: reservationId,
-      };
+        reservation_id: reservationId };
       console.log("Request payload:", JSON.stringify(payload, null, 2));
 
       const baseUrl = API_BASE_URL.endsWith("/")
@@ -153,10 +143,7 @@ export default function AdminBookingsPage() {
         payload,
         {
           headers: {
-            "Content-Type": "application/json",
-          },
-          withCredentials: true,
-        },
+            "Content-Type": "application/json" } },
       );
 
       console.log("Cancel response:", response.data);
@@ -172,8 +159,7 @@ export default function AdminBookingsPage() {
         message: err.message,
         response: err.response?.data,
         status: err.response?.status,
-        headers: err.response?.headers,
-      });
+        headers: err.response?.headers });
       setError(
         err.response?.data?.message ||
           "Failed to cancel reservation. Please try again.",
@@ -196,10 +182,7 @@ export default function AdminBookingsPage() {
           { status: newStatus },
           {
             headers: {
-              "Content-Type": "application/json",
-            },
-            withCredentials: true,
-          },
+              "Content-Type": "application/json" } },
         );
         // Refresh the bookings list after update
         fetchBookings();
@@ -224,7 +207,7 @@ export default function AdminBookingsPage() {
 
   useEffect(() => {
     fetchBookings();
-    const interval = setInterval(() => fetchBookings(true), 15000);
+    const interval = setInterval(() => fetchBookings(true), 5000);
     return () => clearInterval(interval);
   }, []);
 
@@ -307,9 +290,7 @@ export default function AdminBookingsPage() {
         `${baseUrl}/api/reservations/emergency-checkout`,
         payload,
         {
-          headers: { "Content-Type": "application/json" },
-          withCredentials: true,
-        }
+          headers: { "Content-Type": "application/json" } }
       );
       
       setSuccessMessage(response.data.message || "Early checkout processed successfully.");
