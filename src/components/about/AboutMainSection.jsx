@@ -6,7 +6,7 @@ export default function AboutMainSection() {
     <>
       <div
         data-component="AboutMainSection"
-        className="p-[12rem] max-md:px-[6rem] max-sm:px-[2rem] w-full flex flex-col gap-[4.8rem]"
+        className="p-[12rem] max-md:px-[6rem] max-sm:px-[4rem] w-full flex flex-col gap-[4.8rem]"
       >
         <div
           data-component="Block1"
@@ -16,13 +16,13 @@ export default function AboutMainSection() {
             Seamless Comfort and Hospitality
           </h1>
           <p className="text-2xl">
-            Caritas Inn, Ilasan seamlessly blends modern comfort with the warmth
+            Caritas Inn, Yaba seamlessly blends modern comfort with the warmth
             of West African hospitality, offering a unique and inviting
             experience for our esteemed guests. Located in the serene and
-            upscale Lekki Phase 2 area of Lagos, our hotel offers a balanced mix
-            of relaxation, workspaces, and proximity to popular destinations,
+            upscale Yaba area of Lagos, our hotel offers a balanced mix of
+            relaxation, workspaces, and proximity to popular destinations,
             making it a top choice for travelers seeking comfort and convenience
-            in Lekki.
+            in Yaba.
           </p>
         </div>
         <div data-component="Block2" className="flex flex-col w-full">
@@ -39,21 +39,20 @@ export default function AboutMainSection() {
             </div>
             <div
               data-component="Block2Text"
-              className="flex flex-col gap-[1.8rem] font-secondary bg-[color:var(--background-color-2)] w-[100%] p-[12rem] max-md:p-[6rem] max-sm:p-[2rem]"
+              className="flex flex-col gap-[1.8rem] font-secondary bg-[color:var(--background-color-2)] w-[100%] p-[12rem] max-md:p-[6rem] max-sm:p-[4rem]"
             >
               <h1 className="text-6xl font-bold">
                 Your Ideal Retreat for Comfort and Convenience
               </h1>
               <p className="text-2xl">
-                Welcome to a new standard of hospitality in Lekki. Caritas Inn
-                is a modern hotel located in the peaceful Ilasan area with easy
-                access to the Lekki-Epe Expressway. It offers a perfect
-                environment for both business and leisure travelers by combining
-                comfort, functionality, and elegance. The hotel features a
-                variety of well-appointed rooms designed for relaxation,
-                including king-sized beds with luxurious bedding, a coffee
-                station with complimentary packages, air conditioning, free
-                Wi-Fi, flat-screen TVs, and ensuite bathrooms.
+                Welcome to a new standard of hospitality in Yaba. Caritas Inn is
+                a modern hotel located in the peaceful Yaba area. It offers a
+                perfect environment for both business and leisure travelers by
+                combining comfort, functionality, and elegance. The hotel
+                features a variety of well-appointed rooms designed for
+                relaxation, including king-sized beds with luxurious bedding, a
+                coffee station with complimentary packages, air conditioning,
+                free Wi-Fi, flat-screen TVs, and ensuite bathrooms.
               </p>
             </div>
           </div>
@@ -61,13 +60,13 @@ export default function AboutMainSection() {
           <div className="flex max-sm:flex-col">
             <div
               data-component="Block2Text"
-              className="flex flex-col gap-[1.8rem] font-secondary bg-[color:var(--background-color-2)] w-[100%] p-[12rem] max-md:p-[6rem] max-sm:p-[2rem]"
+              className="flex flex-col gap-[1.8rem] font-secondary bg-[color:var(--background-color-2)] w-[100%] p-[12rem] max-md:p-[6rem] max-sm:p-[4rem]"
             >
               <h1 className="text-6xl font-bold">
                 Experience Tranquil Stays with Unmatched Security
               </h1>
               <p className="text-2xl">
-                Caritas Inn is a modern hotel located in the peaceful Lekki
+                Caritas Inn is a modern hotel located in the peaceful Yaba
                 area. We ensure a secure environment with advanced surveillance
                 systems and a dedicated team, providing peace of mind throughout
                 your stay. We offer more than just a place to stay; we provide a
