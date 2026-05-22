@@ -19,11 +19,11 @@ const TOP_ATTRACTIONS = [
     distance: "3 km",
   },
   {
-    title: "Yaba Tech",
-    distance: "1 km",
+    title: "Yaba College of Technology",
+    distance: "1.5 km",
   },
   {
-    title: "Nigerian Institute of Medical Research",
+    title: "Federal College of Education",
     distance: "2 km",
   },
 ];
@@ -38,8 +38,8 @@ const SUPERMARKETS = [
     distance: "2 km",
   },
   {
-    title: "ShopRite - Sabo",
-    distance: "3 km",
+    title: "Ebeano Supermarket - Yaba",
+    distance: "1.5 km",
   },
 ];
 
@@ -49,12 +49,12 @@ const TRANSPORTATION = [
     distance: "On-site",
   },
   {
-    title: "Yaba Bus Stop",
+    title: "Yaba Bus Terminal",
     distance: "1 km",
   },
   {
-    title: "Murtala Muhammed Airport",
-    distance: "20 km",
+    title: "Oshodi Bus Terminal",
+    distance: "6 km",
   },
 ];
 
@@ -64,12 +64,12 @@ const BEACHES = [
     distance: "8 km",
   },
   {
-    title: "Oniru Beach",
-    distance: "12 km",
+    title: "Landmark Beach",
+    distance: "15 km",
   },
   {
-    title: "Elegushi Private Beach",
-    distance: "15 km",
+    title: "Tarkwa Bay Beach",
+    distance: "12 km",
   },
 ];
 
