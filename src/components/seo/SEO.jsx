@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet";
 
 const SEO = ({
   title = "Caritas Inn Yaba | Luxury Accommodation in Sabo, Yaba, Lagos",
-  description = "Experience luxury and comfort at Caritas Inn Yaba. Book your stay at our premium hotel in Sabo, Yaba, Lagos.",
+  description = "Caritas Inn Yaba on Herbert Macaulay Way offers comfortable, secure rooms in the heart of Sabo, Yaba.",
   keywords = "hotel, lagos, accommodation, caritas inn, yaba, sabo, hebert macaulay, luxury hotel, nigeria, business hotel, vacation",
   image = 'https://yaba.caritasinn.com/caritas-logo-2.webp',
   url = typeof window !== "undefined"

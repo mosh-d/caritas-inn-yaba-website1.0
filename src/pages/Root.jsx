@@ -232,7 +232,7 @@ export default function RootLayout() {
     const defaultMetadata = {
       title: "Caritas Inn Lekki | Luxury Accommodation in Lekki Phase 1, Lagos",
       description:
-        "Experience luxury and comfort at Caritas Inn Lekki. Book your stay at our premium hotel in Lekki Phase 1, Lagos.",
+        "Caritas Inn Yaba on Herbert Macaulay Way offers comfortable, secure rooms in the heart of Sabo, Yaba.",
       url: `${baseUrl}${location.pathname}`,
       type: "website",
       image: "/ring-ruby-logo.webp",
@@ -243,7 +243,7 @@ export default function RootLayout() {
       "/": {
         title: "Caritas Inn Yaba | Luxury Accommodation in Sabo, Yaba, Lagos",
         description:
-          "Experience luxury and comfort at Caritas Inn Lekki. Book your stay at our premium hotel in Lekki Phase 1, Lagos.",
+          "Caritas Inn Yaba on Herbert Macaulay Way offers comfortable, secure rooms in the heart of Sabo, Yaba.",
       },
       "/about": {
         title: "About Us | Caritas Inn Yaba",
@@ -261,6 +261,17 @@ export default function RootLayout() {
           "Your booking confirmation at Caritas Inn Yaba.",
         robots: "noindex, follow",
       },
+      "/privacy-policy": {
+        title: "Privacy Policy | Caritas Inn Yaba",
+        description:
+          "Read Caritas Inn Yaba's privacy policy to learn how we collect, use, and protect your personal information.",
+      },
+      "/terms-of-service": {
+        title: "Terms and Conditions | Caritas Inn Yaba",
+        description:
+          "Read the terms and conditions that apply to bookings and website use at Caritas Inn Yaba.",
+      },
+
     };
 
     return { ...defaultMetadata, ...(pageMetadata[location.pathname] || {}) };
