@@ -4,14 +4,15 @@ const SEO = ({
   title = "Caritas Inn Yaba | Luxury Accommodation in Sabo, Yaba, Lagos",
   description = "Experience luxury and comfort at Caritas Inn Yaba. Book your stay at our premium hotel in Sabo, Yaba, Lagos.",
   keywords = "hotel, lagos, accommodation, caritas inn, yaba, sabo, hebert macaulay, luxury hotel, nigeria, business hotel, vacation",
-  image = "/ring-ruby-logo.webp",
+  image = 'https://yaba.caritasinn.com/caritas-logo-2.webp',
   url = typeof window !== "undefined"
     ? window.location.href
-    : "https://caritasinnyaba.fivecloverhotels.com",
+    : "https://yaba.caritasinn.com",
   type = "website",
+  noindex = false,
 }) => {
   const siteName = "Caritas Inn Yaba";
-  const siteUrl = "https://caritasinnyaba.fivecloverhotels.com";
+  const siteUrl = "https://yaba.caritasinn.com";
   const twitterHandle = "@fivecloverhotel";
 
   return (
@@ -20,7 +21,7 @@ const SEO = ({
       <title>{title}</title>
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
-      <meta name="robots" content="index, follow" />
+      <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow'} />
       {/* Viewport should only be in the root HTML */}
 
       {/* Open Graph / Facebook */}
@@ -42,8 +43,8 @@ const SEO = ({
       <link rel="canonical" href={url} />
 
       {/* Favicon */}
-      <link rel="icon" type="image/svg+xml" href="/five-clover-logo.svg" />
-      <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+      <link rel="icon" href="/caritas-logo-2.webp" />
+      <link rel="apple-touch-icon" href="/caritas-logo-2.webp" />
 
       {/* Preconnect to important domains */}
       <link rel="preconnect" href="https://www.google-analytics.com" />

@@ -5,8 +5,8 @@ export const generateHotelSchema = (hotelData = {}) => {
     name: "Caritas Inn Yaba",
     description:
       "Luxury hotel accommodation at Sabo, Yaba, Lagos. Experience comfort and excellent service at Caritas Inn Yaba.",
-    url: "https://caritasinnyaba.fivecloverhotels.com",
-    logo: "https://caritasinnyaba.fivecloverhotels.com/caritas%20logo.webp",
+    url: "https://yaba.caritasinn.com",
+    logo: "https://yaba.caritasinn.com/caritas%20logo.webp",
     priceRange: "$$",
     starRating: {
       "@type": "Rating",
@@ -60,13 +60,13 @@ export const generateBreadcrumbSchema = (items = []) => {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: "https://caritasinnyaba.fivecloverhotels.com",
+      item: "https://yaba.caritasinn.com",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Rooms",
-      item: "https://caritasinnyaba.fivecloverhotels.com/rooms",
+      item: "https://yaba.caritasinn.com/rooms",
     },
   ];
 

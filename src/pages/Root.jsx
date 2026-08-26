@@ -228,7 +228,7 @@ export default function RootLayout() {
 
   // Get current page metadata
   const getPageMetadata = () => {
-    const baseUrl = "https://caritasinnyaba.fivecloverhotels.com";
+    const baseUrl = "https://yaba.caritasinn.com";
     const defaultMetadata = {
       title: "Caritas Inn Lekki | Luxury Accommodation in Lekki Phase 1, Lagos",
       description:
@@ -236,6 +236,7 @@ export default function RootLayout() {
       url: `${baseUrl}${location.pathname}`,
       type: "website",
       image: "/ring-ruby-logo.webp",
+      robots: "index, follow",
     };
 
     const pageMetadata = {
@@ -249,25 +250,16 @@ export default function RootLayout() {
         description:
           "Discover the story behind Caritas Inn Yaba and our commitment to providing exceptional hospitality in Sabo, Yaba, Lagos.",
       },
-      "/rooms": {
-        title: "Our Rooms | Caritas Inn Yaba",
-        description:
-          "Explore our luxurious rooms at Caritas Inn Yaba, designed for your comfort and relaxation.",
-      },
-      "/gallery": {
-        title: "Photo Gallery | Caritas Inn Yaba",
-        description:
-          "View our photo gallery showcasing the luxurious facilities and comfortable accommodations at Caritas Inn Yaba.",
-      },
       "/contact": {
         title: "Contact Us | Caritas Inn Yaba",
         description:
           "Get in touch with Caritas Inn Yaba. Our friendly staff is ready to assist with your booking and inquiries.",
       },
-      "/booking": {
-        title: "Book Your Stay | Caritas Inn Yaba",
+      "/booking-confirmation": {
+        title: "Booking Confirmation | Caritas Inn Yaba",
         description:
-          "Book your luxurious stay at Caritas Inn Yaba. Best rates guaranteed for our premium accommodations in Sabo, Yaba.",
+          "Your booking confirmation at Caritas Inn Yaba.",
+        robots: "noindex, follow",
       },
     };
 
@@ -287,6 +279,8 @@ export default function RootLayout() {
         <meta property="og:url" content={metadata.url} />
         <meta property="og:type" content={metadata.type} />
         <meta property="og:image" content={metadata.image} />
+        <meta name="robots" content={metadata.robots} />
+        <link rel="canonical" href={metadata.url} />
       </SafeHelmet>
       <SchemaMarkup branchId={branchId} />
       <header>{!isHome && <MainNavBar />}</header>
