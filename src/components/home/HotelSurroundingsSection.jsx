@@ -3,6 +3,8 @@ import { HiOutlineShoppingCart } from "react-icons/hi2";
 import { MdOutlineEmojiTransportation } from "react-icons/md";
 import { TbBeach } from "react-icons/tb";
 
+import { RevealGroup, RevealItem, Words } from "../shared/guestMotion";
+
 //images
 import topAttractions from "../../assets/hotel-surroundings/top-attractions.webp";
 import supermarketsAndStores from "../../assets/hotel-surroundings/supermarkets-and-stores.webp";
@@ -77,14 +79,12 @@ export default function HotelSurroundingsSection() {
   return (
     <>
       <div className="p-[12rem] max-sm:p-[12rem_2rem_0_2rem] w-full flex flex-col gap-[4.8rem]">
-        <h2 className="text-6xl font-secondary font-bold">
-          Hotel Surroundings
-        </h2>
-        <div
+        <Words text="Hotel Surroundings" className="text-6xl font-secondary font-bold" />
+        <RevealGroup stagger={0.12}
           data-component="HotelSurroundingsContainer"
           className="flex flex-wrap gap-[4.8rem] justify-start"
         >
-          <div
+          <RevealItem y={36}
             data-component="HotelSurrounding"
             className="flex flex-col gap-[2rem] max-lg:w-full w-[47%] text-[color:var(--white)] border-[1px] border-[color:var(--light-gray)]/10 p-[4rem] bg-cover bg-center"
             style={{
@@ -129,8 +129,8 @@ export default function HotelSurroundingsSection() {
                 </div>
               ))}
             </div>
-          </div>
-          <div
+          </RevealItem>
+          <RevealItem y={36}
             data-component="HotelSurrounding"
             className="flex flex-col gap-[2rem] max-lg:w-full w-[47%] text-[color:var(--white)] border-[1px] border-[color:var(--light-gray)]/10 p-[4rem] bg-cover bg-center"
             style={{
@@ -175,8 +175,8 @@ export default function HotelSurroundingsSection() {
                 </div>
               ))}
             </div>
-          </div>
-          <div
+          </RevealItem>
+          <RevealItem y={36}
             data-component="HotelSurrounding"
             className="flex flex-col gap-[2rem] max-lg:w-full w-[47%] text-[color:var(--white)] border-[1px] border-[color:var(--light-gray)]/10 p-[4rem] bg-cover bg-center"
             style={{
@@ -222,8 +222,8 @@ export default function HotelSurroundingsSection() {
                 </div>
               ))}
             </div>
-          </div>
-          <div
+          </RevealItem>
+          <RevealItem y={36}
             data-component="HotelSurrounding"
             className="flex flex-col gap-[2rem] max-lg:w-full w-[47%] text-[color:var(--white)] border-[1px] border-[color:var(--light-gray)]/10 p-[4rem] bg-cover bg-center"
             style={{
@@ -268,8 +268,8 @@ export default function HotelSurroundingsSection() {
                 </div>
               ))}
             </div>
-          </div>
-        </div>
+          </RevealItem>
+        </RevealGroup>
       </div>
     </>
   );
