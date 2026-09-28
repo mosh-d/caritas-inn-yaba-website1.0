@@ -12,7 +12,6 @@ const SEO = ({
   noindex = false,
 }) => {
   const siteName = "Caritas Inn Yaba";
-  const siteUrl = "https://yaba.caritasinn.com";
   const twitterHandle = "@fivecloverhotel";
 
   return (

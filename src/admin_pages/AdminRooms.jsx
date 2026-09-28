@@ -11,14 +11,11 @@ import { useWebSocketContext } from "../context/WebSocketContext";
 import { canManageRoomPrices, getAuthHeaders } from "../utils/auth";
 import { SERVER_BASE_URL } from "../utils/server-config";
 import RoomStatusTag from "../components/shared/RoomStatusTag";
+import { BRANCH_ID } from "../utils/branch";
 
 // ─── API Setup ────────────────────────────────────────────────────────────────
 
 let API_BASE_URL = SERVER_BASE_URL;
-
-// ─── Yaba branch_id = 6 (Caritas Inn Yaba) ───────────────────────────────
-// Source of truth: auth.js, room-data.js, WebSocketContext.jsx all use BRANCH_ID = 4
-const BRANCH_ID = 6;
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
