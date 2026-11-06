@@ -250,7 +250,7 @@ export default function RootLayout() {
   const getPageMetadata = () => {
     const baseUrl = "https://yaba.caritasinn.com";
     const defaultMetadata = {
-      title: "Caritas Inn Lekki | Luxury Accommodation in Lekki Phase 1, Lagos",
+      title: "Caritas Inn Yaba | Luxury Accommodation in Sabo, Yaba, Lagos",
       description:
         "Caritas Inn Yaba on Herbert Macaulay Way offers comfortable, secure rooms in the heart of Sabo, Yaba.",
       url: `${baseUrl}${location.pathname}`,
